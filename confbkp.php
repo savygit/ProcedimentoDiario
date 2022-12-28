@@ -19,7 +19,7 @@ for ($i = 0; $i < $real; $i++)
 }
 
 $real = sizeof($roteiro);
-$c = "../../BkFtp/";
+$c = "../BkFtp/";
 
 /* csr20190309.ini - monta o caminho completo do diretorio local de bkp */
 // assume q esta rodando em Windows e q o caminho de backup é um caminho acessivel a partir do caminho atual (ou seja, que tem pelo menos ..\ uma vez)
