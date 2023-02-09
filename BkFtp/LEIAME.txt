@@ -1,0 +1,2 @@
+caso não haja o rar.exe nesse diretório, copiar da instalação do WinRar
+o atalho BKP do DOS é um modelo para ser copiado num lugar de melhor acesso para o usuário

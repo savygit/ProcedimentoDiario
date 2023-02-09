@@ -124,6 +124,7 @@ function copy(txt) {
 $hora = date("H") * 1;
 $dia = date("N");
 $letra_usb = "\"F:\BKP_EMPRESAS E TRIX\"";
+$caminho_bkp = "C:\\xampp\htdocs\\Trix\\ProcedimentoDiario\\BkFtp";
 
 //$link_conf = "confbkp.php";
 //para quarentena

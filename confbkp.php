@@ -19,18 +19,7 @@ for ($i = 0; $i < $real; $i++)
 }
 
 $real = sizeof($roteiro);
-$c = "../BkFtp/";
-
-/* csr20190309.ini - monta o caminho completo do diretorio local de bkp */
-// assume q esta rodando em Windows e q o caminho de backup é um caminho acessivel a partir do caminho atual (ou seja, que tem pelo menos ..\ uma vez)
-$c_completo = getcwd();
-$ac_completo = explode("\\", $c_completo);
-$c_completo = "";
-$c_voltas = substr_count($c, "..");
-for ($i = 0; $i < sizeof($ac_completo) - $c_voltas; $i++)
-   $c_completo .= $ac_completo[$i] . "\\";
-$c_completo .= substr($c, $c_voltas * 3, -1);
-/* csr20190309.fim */
+$c_completo = "C:\\xampp\\htdocs\\Trix\\ProcedimentoDiario\\BkFtp\\";
 
 echo "<!DOCTYPE html>";
 echo "<html>";
