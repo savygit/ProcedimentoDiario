@@ -19,7 +19,8 @@ for ($i = 0; $i < $real; $i++)
 }
 
 $real = sizeof($roteiro);
-$c_completo = "C:\\xampp\\htdocs\\Trix\\ProcedimentoDiario\\BkFtp\\";
+$c = "C:\\xampp\\htdocs\\Trix\\ProcedimentoDiario\\BkFtp\\";
+
 
 echo "<!DOCTYPE html>";
 echo "<html>";
@@ -34,7 +35,7 @@ echo "<body>";
 $log = "";
 
 $h = "<b style='font-size: 16pt; color: DARKGREEN'>Verificação de Backups dos Bancos de dados do Trix</b><br>";
-$h .= "<b>Último refresh da tela: " . date('d/m/Y - H:i:s') . " - Diretório local de backup: $c_completo</b>\n";
+$h .= "<b>Último refresh da tela: " . date('d/m/Y - H:i:s') . " - Diretório local de backup: $c</b>\n";
 $h .= "<table border=1 style='border: 1px solid black; border-collapse: collapse; font-family: arial; font-size: 9pt' cellpadding=3px cellspacing=3px>";
 $h .= "<tr style='background-color:NAVY; color: WHITE; border: white'><th>Data do<br>último log</th><th>Arquivo</th>";
 $h .= "<th>Tamanho do<br>último backup</th><th>Tamanho<br>encontrado atual</th><th>Data</th><th>Diferença</th><th>Diferença<br>%</th><th>Status</th></tr>";
