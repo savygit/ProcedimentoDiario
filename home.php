@@ -13,7 +13,7 @@ include_once "{$path}funcbase.php";
 
 $divAbreGuia = "<div id=tabs-#IDGUIA# style='padding:15px' class='tab-pane fade #ATIVA#' role='tabpanel' aria-labelledby='tabs-#IDGUIA#'>";
 $arrGuias = array();
-      $arrGuias["Atu"] = array("ativa" => true, "titulo" => "Atualiação");
+      $arrGuias["Atu"] = array("ativa" => true, "titulo" => "Atualização");
       $arrGuias["Proc"] = array("ativa" => false, "titulo" => "Procedimentos");
       $arrGuias["Cli"] = array("ativa" => false, "titulo" => "Trix Clientes");
       $arrGuias["Cli2"] = array("ativa" => false, "titulo" => "Trix Clientes 2.0");
