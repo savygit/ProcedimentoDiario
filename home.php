@@ -9,9 +9,11 @@ include_once "{$path}funcbase.php";
    <?php echo includeCSS("bootstrap.min.css", "{$path}bootstrap/css/");
    ?>
 </head>
+<body class="min-vw-100 min-vh-100">
+    <div class="d-flex flex-column align-items-stretch min-vw-100 min-vh-100">
 <?php
 
-$divAbreGuia = "<div id=tabs-#IDGUIA# style='padding:15px' class='tab-pane fade #ATIVA#' role='tabpanel' aria-labelledby='tabs-#IDGUIA#'>";
+$divAbreGuia = "<div id=tabs-#IDGUIA# style='/*padding:15px*/' class='tab-pane fade #ATIVA#' role='tabpanel' aria-labelledby='tabs-#IDGUIA#'>";
 $arrGuias = array();
       $arrGuias["Atu"] = array("ativa" => true, "titulo" => "Atualização");
       $arrGuias["Proc"] = array("ativa" => false, "titulo" => "Procedimentos");
@@ -28,7 +30,7 @@ $arrGuias = array();
       }
       echo "</ul>\n";
       
-      echo "<div class='tab-content pd-10' id='myTabContent'>";
+      echo "<div class='tab-content flex-grow-1 flex-shrink-0 pd-10 d-grid' id='myTabContent'>";
       echo str_replace(array("#IDGUIA#", "#ATIVA#"), array("Atu", "show active"), $divAbreGuia);
       echo "<iframe class='frammain' id='Atu' src='http://localhost/Trix/AtualizacaoTRIX/' width='100%' height='100%' style='border:none;'></iframe>\n";
       echo "</div>";
@@ -52,8 +54,7 @@ $arrGuias = array();
       
       echo "</div>";
  ?>
-
-<body>
+    </div>
 </body>
 <?php echo includeJS("bootstrap.bundle.min.js", "{$path}bootstrap/js/")
    ?>
