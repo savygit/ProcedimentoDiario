@@ -140,15 +140,24 @@
     <div class='container'>
         <h2>Procedimento de atualização de versão do sistema Trix em produção</h2>
         <h3>Para windows - Usado temporariamente para copiar os programas via MS-DOS</h3>
-        <h4>O roteiro deve ser usado com base no Oficial</h4>
+        <h4>O roteiro deve ser usado com base no Oficial ou Oficial2.0</h4>
+        <h4>Diretório: <?php echo $pasta;?></h4>
+
+        <form action='atualizarversao.php' method=post>
+            <div style='font-size:10pt;padding:5px;background-color:#e0e0e0'>
+            Data:<input type=text name=d value='' placeholder='MM-DD-YY' size=10><br><br>
+            Pasta:<input type=text name=pasta value='Oficial' placeholder='' size=20><br><br>
+            <input type=submit name=enviar value='processar'>
+            </div>
+        </form>
         <ol>
             <li>Se o Diretório base for o <b>Oficial</b>, faça o push nesse ambiente para pegar o AtusSTrix versionado mais recentemente</li>
             <li>Acessar o MSDOS. Pode abrir em qualquer endereço</li>
             <li>Executar o comando abaixo trocando MM-DD-YY pelo mês, dia e ano que se deseja pegar dos fontes</li>
-            <ul>
+            <!-- <ul>
                 <li>DICA:chamar esse mesmo programa com o parametro: ?d=MM-DD-YY (exemplo: 02-12-19 que é 12/02/2019)</li>
-                <li>DICA:para trocar a pasta do Oficial, chamar esse programa com parametro: ?pasta=NOMEDIR (exemplo: &pasta=BRASCON)</li>
-            </ul>
+                <li>DICA:para trocar a pasta do Oficial, chamar esse programa com parametro: ?pasta=NOMEDIR (exemplo: &pasta=Oficial2.0)</li>
+            </ul> -->
             <div style='background-color:#e0e0e0; padding: 5px'>
                 <b><?php echo $caminhoProprio; ?>ultimosCommitsMaster.bat</b><br>
                 mkdir <?php echo $caminho; ?>Compilados\atu<br>
