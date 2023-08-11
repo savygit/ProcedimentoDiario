@@ -39,6 +39,7 @@
             }
             if (isset($arrFontes["Raiz"]))
             {
+               $arrFontes["Raiz"] = array_unique($arrFontes["Raiz"]);
                echo "<h4>Arquivos versionados na Raiz</h4>";
                foreach ($arrFontes["Raiz"] as $file)
                {
