@@ -21,7 +21,7 @@ input[type="text"]{height:20px; width: 150px; padding:5px; border-radius: 3px}
 }
 </style>
 <BODY>
-<a href='http://localhost/Trix/ProcedimentoDiario/'>Home</a>
+<a href='http://localhost/Trix/ProcedimentoDiario/'>Home</a><br><br>
 <?php
 $caminho = "C:\\xampp\\mysql\\bin";
 if (isset($_REQUEST["GerarCodigo"]))

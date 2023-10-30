@@ -92,7 +92,7 @@
 
 <body>
     <h2>Procedimento de atualização de versão do sistema Trix em produção</h2>
-    <a href='http://localhost/Trix/ProcedimentoDiario/'>Home</a>
+    <a href='http://localhost/Trix/ProcedimentoDiario/'>Home</a><br><br>
     <h3>Introdução</h3>
     <div class='container'>
         <ul>

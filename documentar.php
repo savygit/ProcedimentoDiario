@@ -15,7 +15,7 @@
         div.container {border: solid 1px #e0e0e0; border-radius: 5px;}   
     </style>
     <body>
-      <a href='http://localhost/Trix/ProcedimentoDiario/'>Home</a>
+      <a href='http://localhost/Trix/ProcedimentoDiario/'>Home</a><br><br>
         <?php
          if (isset($_POST["parametros"]))
          {
