@@ -16,6 +16,7 @@
       </style>
    </head>
    <body style="font-size: 14pt; padding: 7.5px">
+   <a href='http://localhost/Trix/ProcedimentoDiario/'>Home</a>
       <div class="dashboard">
          <div class="servidor">
             <h3>ReflectSys: </h3>
