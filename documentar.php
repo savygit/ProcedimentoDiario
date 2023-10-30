@@ -26,17 +26,17 @@
                $desc = "";
                if (substr($param, 0,1) == "&")
                {
-                  $desc .= "(ref)";
+                  $desc .= " (ref)";
                   $param = substr($param, 1);
                }
                $pOpc = explode("=", $param);
                if (sizeof($pOpc) > 1)
                {
-                   $desc .= "(opc)";
+                   $desc .= " (opc)";
 
                }
                $param = trim($pOpc[0]);   
-               echo " * @param Type $param:$desc <br>";
+               echo " * @param Type $param$desc <br>";
             }
 //            return true;
          }
