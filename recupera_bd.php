@@ -1,12 +1,13 @@
 <?php 
 /*
-* @version   1.00
-* @author    Giovana Aline Bruno
-* 
-* @desc recupera um banco de dados de acordo com as opções selecionadas
-
-v 1.00 2016-11-10
-*/
+ * @version   1.00
+ * @author    Giovana Aline Bruno
+ * 
+ * @desc recupera um banco de dados de acordo com as opções selecionadas
+ *
+ * v 1.00 2016-11-10
+ * v 1.10 2023-11-01 dsc: Inclusão da importação do novos tabextras e IntEDI
+ */
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -18,7 +19,6 @@ body{font-family: Verdana; font-size: 10pt}
 li{padding-top:5px; display: block }
 input[type="submit"]{height:25px; cursor:pointer;}
 input[type="text"]{height:20px; width: 150px; padding:5px; border-radius: 3px}
-}
 </style>
 <BODY>
 <a href='http://localhost/Trix/ProcedimentoDiario/'>Home</a><br><br>
@@ -46,6 +46,12 @@ if (isset($_REQUEST["GerarCodigo"]))
 			echo "source tabextras.sql;<br>";
 		if (isset($_REQUEST["tabextra2"]))
 			echo "source tabextras2.sql;<br>";
+		if (isset($_REQUEST["tabextra3"]))
+			echo "source tabextras3.sql;<br>";
+		if (isset($_REQUEST["tabextra4"]))
+			echo "source tabextras4.sql;<br>";
+		if (isset($_REQUEST["intedi"]))
+			echo "source IntEDI.sql;<br>";
 		if (isset($_REQUEST["atustrix"]))
 		{			
 			//echo "--default-character-set=iso-8859-1;<br>";
@@ -61,9 +67,8 @@ if (isset($_REQUEST["GerarCodigo"]))
 			echo "update Emails set StatusEnvio = 'C' where StatusEnvio = 'A';<br>";
 		}
 			
-		echo "exit<br>" . 
-			"cd C:\Users\TRIXS\Desktop\Atalhos<br>" . 
-		"Acabou.txt<br><br>##fim";
+		echo "exit<br>"; 
+		//echo "cd C:\Users\TRIXS\Desktop\Atalhos<br>Acabou.txt<br><br>##fim";
 		
 	}
 	
@@ -94,6 +99,9 @@ echo ("<br><br>Quais processos serão executados:<br>");
 echo ("<input type='checkbox' name='recriabd' checked>Recriar o banco de dados<br>");
 echo ("<input type='checkbox' name='tabextra' >Importar tabextras.sql<br>");
 echo ("<input type='checkbox' name='tabextra2' >Importar tabextras2.sql<br>");
+echo ("<input type='checkbox' name='tabextra3' >Importar tabextras3.sql<br>");
+echo ("<input type='checkbox' name='tabextra4' >Importar tabextras4.sql<br>");
+echo ("<input type='checkbox' name='intedi' >Importar IntEDI.sql (SPModal)<br>");
 echo ("<input type='checkbox' name='atustrix' checked>Importar AtuSTrix.sql<br>");
 echo ("<input type='checkbox' name='atustrix2' >Importar AtuSTrix.sql 2.0<br>");
 echo ("<input type='checkbox' name='bloqjob' checked>Bloquear JOBS e E-mails agendados?<br>");
