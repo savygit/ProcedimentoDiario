@@ -30,45 +30,46 @@ if (isset($_REQUEST["GerarCodigo"]))
 	 echo "Nome do banco de dados deve ser informado";
 	else
 	{
+		$cmd = "";
 		if (isset($_REQUEST["copiaatustrix"]))
-				echo 'xcopy "C:\xampp\htdocs\Trix\TrixProjeto\Desenvolvimento\AtuSTrix.sql" "C:\xampp\mysql\bin"<br><br>';
+				echo 'xcopy "C:\xampp\htdocs\Trix\TrixProjeto\Desenvolvimento\AtuSTrix.sql" "C:\xampp\mysql\bin"\n\n';
 			
-		echo "cd $caminho<br>";
+		$cmd .= "cd $caminho\n";
 		$bd = $_REQUEST["nomebd"];
-		echo "mysql -uroot<br>";
+		$cmd .= "mysql -uroot\n";
 		if (isset($_REQUEST["recriabd"]))
-			echo "drop database if exists $bd;<br>" . 
-			 "create database $bd;<br>";
-		echo "use $bd<br>";
+		$cmd .= "drop database if exists $bd;\n" . 
+			 "create database $bd;\n";
+			 $cmd .= "use $bd\n";
 		if (isset($_REQUEST["recriabd"]))
-			echo "source $bd.sql;<br>";
+		$cmd .= "source $bd.sql;\n";
 		if (isset($_REQUEST["tabextra"]))
-			echo "source tabextras.sql;<br>";
+		$cmd .= "source tabextras.sql;\n";
 		if (isset($_REQUEST["tabextra2"]))
-			echo "source tabextras2.sql;<br>";
+		$cmd .= "source tabextras2.sql;\n";
 		if (isset($_REQUEST["tabextra3"]))
-			echo "source tabextras3.sql;<br>";
+		$cmd .= "source tabextras3.sql;\n";
 		if (isset($_REQUEST["tabextra4"]))
-			echo "source tabextras4.sql;<br>";
+		$cmd .= "source tabextras4.sql;\n";
 		if (isset($_REQUEST["intedi"]))
-			echo "source IntEDI.sql;<br>";
+		$cmd .= "source IntEDI.sql;\n";
 		if (isset($_REQUEST["atustrix"]))
 		{			
-			//echo "--default-character-set=iso-8859-1;<br>";
-			echo "source C:\\xampp\htdocs\Trix\TrixProjeto\Desenvolvimento\AtuSTrix.sql<br>";
+			$cmd .= "source C:\\xampp\htdocs\Trix\TrixProjeto\Desenvolvimento\AtuSTrix.sql\n";
 		}
 		elseif (isset($_REQUEST["atustrix2"]))
 		{		
-         echo "source C:\\xampp\htdocs\Trix\TrixProjeto2.0\Desenvolvimento\AtuSTrix.sql<br>";
+			$cmd .= "source C:\\xampp\htdocs\Trix\TrixProjeto2.0\Desenvolvimento\AtuSTrix.sql\n";
 		}
 		if (isset($_REQUEST["bloqjob"]))
 		{
-			echo "update JobAut set Status = 'Y' where Status = 'P';<br>";
-			echo "update Emails set StatusEnvio = 'C' where StatusEnvio = 'A';<br>";
+			$cmd .= "update JobAut set Status = 'Y' where Status = 'P';\n";
+			$cmd .= "update Emails set StatusEnvio = 'C' where StatusEnvio = 'A';\n";
 		}
 			
-		echo "exit<br>"; 
-		//echo "cd C:\Users\TRIXS\Desktop\Atalhos<br>Acabou.txt<br><br>##fim";
+		$cmd .= "exit\n"; 
+		
+		echo "<textarea cols=100 rows=14 style='font-size:12pt'>$cmd</textarea>";
 		
 	}
 	
