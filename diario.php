@@ -73,7 +73,7 @@ function lecampos_bkp()
    comando_bkp += "<br>&emsp;&emsp;" + comando + imgCopy(comando);
 
    comando_confbkp = comando_confbkp + " " + data + " " + $('#rar').val() + " \"F:\\BKP_EMPRESAS E TRIX\" " + 
-      $('#ftpsis').val() + " D";
+      $('#ftpsis').val() + complemento;
       
     comando_confbkp += imgCopy(comando_confbkp.replaceAll("\"", "\\\""));
       
@@ -166,8 +166,6 @@ echo "</li>";
 echo "<li> O BACKUP da Toride agora é feito via MSDOS, caso não consiga baixar pelas rotinas normais: Acessar o endereço http://177.67.1.194/Trix/Toride/bkdados/ e baixar em $caminho_bkp</li>";
 echo "<li> Aguardar todos os downloads finalizarem e plugar o pendrive de bkp no computador</li>";
 echo "<li> Acessar o link: <a href='$link_conf' target='blank'>CONFERENCIA</a> e confirmar os valores encontrados</li>";
-echo "<li> O último parametro abaixo, indica se tem partição D para envio do backup. A existencia dessa partição faz com que uma copia em rar seja enviada " . 
-   "para o caminho {$letra_usb}</li>";
 
 echo "<li> Executar o comando no DOS já aberto em $caminho_bkp: "
    . "<span id='comando_confbkp'>O Comando só aparece preencher as senhas</span></li>";
