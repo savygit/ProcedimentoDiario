@@ -3,11 +3,6 @@ bdfazspm.sql.tar.gz**T**S
 bdalexsp.sql.tar.gz**T**S
 bdffdtrix.sql.tar.gz**T**S
 bdspmtrix.sql.tar.gz**T**S
-bdsterlix.sql.tar.gz**T**S
-bdecoser.sql.tar.gz**T**S
-bdntparnaiba.sql.tar.gz**T**S
-bdntsterlix.sql.tar.gz**T**S
-bdntraiz.sql.tar.gz**T**S
 phpInfo_sistematrix.txt**T**N
 ##SERVIDOR ftp.reflectsys.com.br**T**
 bdsavy.sql.tar.gz**T**S
@@ -25,6 +20,7 @@ bdeducam.sql.tar.gz**T**S
 phpInfo_reflectsys.txt**T**N
 BKPLogsQ.zip**T**N
 ##SERVIDOR ftp.reflectsys1.com.br**T**
+bdnfe0001.sql.tar.gz**T**S
 bdbrascon.sql.tar.gz**T**N
 bdbrajap.sql.tar.gz**T**N
 bdbralog.sql.tar.gz**T**N
@@ -32,7 +28,6 @@ AppColetas.zip**T**N
 AppColetasJap.zip**T**N
 phpInfo_reflectsys1.txt**T**N
 ##SERVIDOR ftp.reflectsys2.com.br**T**
-bdsigsan.sql.tar.gz**T**S
 bdsigscs.sql.tar.gz**T**S
 bdsigcfr.sql.tar.gz**T**S
 bdsigbol.sql.tar.gz**T**S
