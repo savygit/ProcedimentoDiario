@@ -21,10 +21,12 @@ phpInfo_reflectsys.txt**T**N
 BKPLogsQ.zip**T**N
 ##SERVIDOR ftp.reflectsys1.com.br**T**
 bdnfe0001.sql.tar.gz**T**S
-bdbrascon.sql.tar.gz**T**N
+bdnfe0002.sql.tar.gz**T**S
+bdnfe0003.sql.tar.gz**T**S
+bdnfe0004.sql.tar.gz**T**S
+bdnfe0005.sql.tar.gz**T**S
 bdbrajap.sql.tar.gz**T**N
 bdbralog.sql.tar.gz**T**N
-AppColetas.zip**T**N
 AppColetasJap.zip**T**N
 phpInfo_reflectsys1.txt**T**N
 ##SERVIDOR ftp.reflectsys2.com.br**T**
