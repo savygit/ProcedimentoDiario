@@ -1,0 +1,11 @@
+Esse diretório deve ficar em OutrosProgramas
+Quando utilizado, deve ficar em C:\xampp\htdocs\Trix\
+
+
+Seu objetivo é montar um cronograma de entrega baseado em tarefas e cada tarefa tem seu esforço em horas
+
+No programa deve ser indicado a data início, quais serão os feriados e qual a quantidade de horas por dia
+
+a lista de tarefas pode ser montada em planilha e assim gerar o array
+
+Pode ver em formato de cronograma ou lista; usando a flag cronograma:true/false
