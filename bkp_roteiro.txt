@@ -37,6 +37,7 @@ bdsigcfr.sql.tar.gz**T**S
 bdsigbol.sql.tar.gz**T**S
 sigbol1.sql.tar.gz**T**S
 bdzanatta.sql.tar.gz**T**S
+bdmbltrix.sql.tar.gz**T**S
 phpInfo_reflectsys2.txt**T**N
 ##SERVIDOR Toride proprio**T**
 TorideBK.rar**T**S
