@@ -17,6 +17,7 @@ bdfixx.sql.tar.gz**T**S
 bdampa.sql.tar.gz**T**S
 bdamav.sql.tar.gz**T**S
 bdeducam.sql.tar.gz**T**S
+bdruiz.sql.tar.gz**T**S
 phpInfo_reflectsys.txt**T**N
 BKPLogsQ.zip**T**N
 ##SERVIDOR ftp.reflectsys1.com.br**T**
