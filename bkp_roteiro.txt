@@ -14,9 +14,6 @@ bdescmus.sql.tar.gz**T**S
 bdaudiom.sql.tar.gz**T**S
 bdproser.sql.tar.gz**T**S
 bdfixx.sql.tar.gz**T**S
-bdampa.sql.tar.gz**T**S
-bdamav.sql.tar.gz**T**S
-bdeducam.sql.tar.gz**T**S
 bdruiz.sql.tar.gz**T**S
 phpInfo_reflectsys.txt**T**N
 BKPLogsQ.zip**T**N
@@ -28,6 +25,7 @@ bdnfe0004.sql.tar.gz**T**S
 bdnfe0005.sql.tar.gz**T**S
 bdnfe0006.sql.tar.gz**T**S
 bdnfe0007.sql.tar.gz**T**S
+bdnfe0008.sql.tar.gz**T**S
 bdbrajap.sql.tar.gz**T**N
 bdbralog.sql.tar.gz**T**N
 AppColetasJap.zip**T**N
@@ -37,7 +35,6 @@ bdsigscs.sql.tar.gz**T**S
 bdsigcfr.sql.tar.gz**T**S
 bdsigbol.sql.tar.gz**T**S
 sigbol1.sql.tar.gz**T**S
-bdzanatta.sql.tar.gz**T**S
 bdmbltrix.sql.tar.gz**T**S
 phpInfo_reflectsys2.txt**T**N
 ##SERVIDOR Toride proprio**T**
