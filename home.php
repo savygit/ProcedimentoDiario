@@ -17,8 +17,8 @@ $divAbreGuia = "<div id=tabs-#IDGUIA# style='/*padding:15px*/' class='tab-pane f
 $arrGuias = array();
       $arrGuias["Atu"] = array("ativa" => true, "titulo" => "Atualização");
       $arrGuias["Proc"] = array("ativa" => false, "titulo" => "Procedimentos");
-      $arrGuias["Cli"] = array("ativa" => false, "titulo" => "Trix Clientes");
-      $arrGuias["Cli2"] = array("ativa" => false, "titulo" => "Trix Clientes 2.0");
+      $arrGuias["Cli"] = array("ativa" => false, "titulo" => "Sistemas Clientes");
+      $arrGuias["Cli2"] = array("ativa" => false, "titulo" => "Sistemas Clientes 2.0");
       $arrGuias["Links"] = array("ativa" => false, "titulo" => "Des e Savy");
  echo ("<ul class='nav nav-tabs' id='tabsHD' role='tablist'>\n");
       foreach ($arrGuias as $idG => $g)
@@ -38,10 +38,10 @@ $arrGuias = array();
       echo "<iframe class='frammain' id='Proc' src='http://localhost/Trix/ProcedimentoDiario/' width='100%' height='100%' style='border:none;'></iframe>\n";
       echo "</div>";
       echo str_replace(array("#IDGUIA#", "#ATIVA#"), array("Cli", ""), $divAbreGuia);
-      echo "<iframe class='frammain' id='Cli' src='http://localhost/Trix/TrixProjeto/Desenvolvimento/trixcliente.php?novaJanela=S' width='100%' height='100%' style='border:none;'></iframe>\n";
+      echo "<iframe class='frammain' id='Cli' src='http://localhost/Trix/TrixProjeto/Desenvolvimento/siscliente.php?novaJanela=S' width='100%' height='100%' style='border:none;'></iframe>\n";
       echo "</div>";
       echo str_replace(array("#IDGUIA#", "#ATIVA#"), array("Cli2", ""), $divAbreGuia);
-       echo "<iframe class='frammain' id='Cli' src='http://localhost/Trix/TrixProjeto2.0/Desenvolvimento/trixcliente.php?novaJanela=S' width='100%' height='100%' style='border:none;'></iframe>\n";
+       echo "<iframe class='frammain' id='Cli' src='http://localhost/Trix/TrixProjeto2.0/Desenvolvimento/siscliente.php?novaJanela=S' width='100%' height='100%' style='border:none;'></iframe>\n";
       echo "</div>";
       echo str_replace(array("#IDGUIA#", "#ATIVA#"), array("Links", ""), $divAbreGuia);
        echo ("<div style='margin-top:10px'><a " .
