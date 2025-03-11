@@ -279,7 +279,7 @@
         <li>Texto Sugerido:</li>
         <textarea cols=100 rows="5" class='texto_atu'><div style=\"font-size:18pt;padding:20px;line-height:40px; background-color:#F5DA81;border-radius:5px\"><h2 style=\"font-size:24pt\">COMUNICADO - ATUALIZAÇÃO DO SISTEMA!</h2>O sistema Trix foi atualizado hoje!<br>Qualquer dúvida, entre em contato com o suporte Trix<br><br>Bom Trabalho!</div></textarea>
         <li>SQL para insert com validade para a data atual (esse SQL pode ser execultado pelo atualização):</li>
-        <textarea cols=100 rows="6" class='texto_atu'>INSERT INTO MesEmp (ID, DaData, AteData, Mensagem, DoAdmTrix, Ativo, Titulo, AbreTelaInic, LargMsg, AltMsg) VALUES ('', curdate(), curdate(), '<div style=\"font-size:18pt;padding:20px;line-height:40px; background-color:#F5DA81;border-radius:5px\"><h2 style=\"font-size:24pt\">COMUNICADO - ATUALIZAÇÃO DO SISTEMA!</h2>O sistema Trix foi atualizado hoje!<br>Qualquer dúvida, entre em contato com o suporte Trix<br><br>Bom Trabalho!</div>', 'S', 'S', '', 'S', '95%', '300px')</textarea>
+        <textarea cols=100 rows="6" class='texto_atu'>INSERT INTO MesEmp (ID, DaData, AteData, Mensagem, EhMsgSistema, Ativo, Titulo, AbreTelaInic, LargMsg, AltMsg) VALUES ('', curdate(), curdate(), '<div style=\"font-size:18pt;padding:20px;line-height:40px; background-color:#F5DA81;border-radius:5px\"><h2 style=\"font-size:24pt\">COMUNICADO - ATUALIZAÇÃO DO SISTEMA!</h2>O sistema Trix foi atualizado hoje!<br>Qualquer dúvida, entre em contato com o suporte Trix<br><br>Bom Trabalho!</div>', 'S', 'S', '', 'S', '95%', '300px')</textarea>
         <h5>Remover o arquivo em_atualizacao.php do sistema:</h5>
         <li>Acesse a AtualizacaoTRIX e remova o arquivo em_atualizacao.php.
             <ul>
