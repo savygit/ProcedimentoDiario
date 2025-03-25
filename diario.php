@@ -69,7 +69,7 @@ function lecampos_bkp()
    comando =  comando_bkp + " " + $('#rar').val() + " " + $('#ftpsis').val() + complemento;
    comando_bkp = comando + imgCopy(comando);
 
-   comando = comando_bkpTor + " "  + $('#ftpsis').val();
+   comando = comando_bkpTor + " "  + $('#ftpsis').val() + " 1";
    comando_bkp += "<br>&emsp;&emsp;" + comando + imgCopy(comando);
 
    comando_confbkp = comando_confbkp + " " + data + " " + $('#rar').val() + " \"F:\\BKP_EMPRESAS E TRIX\" " + 
@@ -159,11 +159,12 @@ echo "<li>Preencha os campos de senhas:";
 echo "<li> Acessar o Atalho no Desktop chamado Backup OU Abrir o DOS, nesse caminho: C:\Windows\System32\cmd.exe cd $caminho_bkp</li>";
 echo "<li> Colar o comando: <span id='comando_bkp'>O Comando só aparece preencher as senhas</span>";
 echo "<ol>";
+echo "<li> Obs. Bkp Toride considerar 2° parametro igual a 1 para IP 186 e 0 para IP 177</li>";
 echo "<li> Acessar o link: <a href='$link_conf' target='blank'>CONFERENCIA</a> para conferir os arquivos baixados</li>";
 echo "<li> Após finalizar o bkp pelo MS DOS, se não finalizou, completar acessando o FileZilla de cada servidor</li>";
 echo "</ol>";
 echo "</li>";
-echo "<li> O BACKUP da Toride agora é feito via MSDOS, caso não consiga baixar pelas rotinas normais: Acessar o endereço http://177.67.1.194/Trix/Toride/bkdados/ e baixar em $caminho_bkp</li>";
+echo "<li> O BACKUP da Toride agora é feito via MSDOS, caso não consiga baixar pelas rotinas normais: Acessar o endereço http://177.55.133.151/Trix/Toride/bkdados/ e baixar em $caminho_bkp</li>";
 echo "<li> Aguardar todos os downloads finalizarem e plugar o pendrive de bkp no computador</li>";
 echo "<li> Acessar o link: <a href='$link_conf' target='blank'>CONFERENCIA</a> e confirmar os valores encontrados</li>";
 
