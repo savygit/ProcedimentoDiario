@@ -169,6 +169,9 @@
             mkdir <?php echo $caminho; ?>Compilados\atu<br>
             mkdir <?php echo $caminho; ?>Compilados\atu\styles<br>
             mkdir <?php echo $caminho; ?>Compilados\atu\images<br>
+            mkdir <?php echo $caminho; ?>Compilados\atu\js<br>
+            mkdir <?php echo $caminho; ?>Compilados\atu\bootstrap<br>
+            mkdir <?php echo $caminho; ?>Compilados\atu\jquery<br>
             cd <?php echo $caminhoOri; ?>Desenvolvimento<br>
             xcopy *.php <?php echo $caminho; ?>Compilados\atu /D:<?php echo $d; ?><br>
             xcopy *.js <?php echo $caminho; ?>Compilados\atu /D:<?php echo $d; ?><br>
@@ -182,23 +185,21 @@
                del <?php echo $caminho; ?>Compilados\atu\t.php<br>
                del <?php echo $caminho; ?>Compilados\atu\defibd.php<br>
                del <?php echo $caminho; ?>Compilados\atu\def_sis_teste.php<br>
-               del <?php echo $caminho; ?>Compilados\atu\styles\coresHomologacao.css<br>
             </div>
             xcopy AtuSTrix.sql <?php echo $caminho; ?>Compilados\<br>
             cd styles<br>
-            xcopy * <?php echo $caminho; ?>Compilados\atu\styles /D:<?php echo $d; ?><br>
-            cd ..<br>
-            cd images<br>
+            xcopy * /s /e <?php echo $caminho; ?>Compilados\atu\styles /D:<?php echo $d; ?><br>
+            cd ../images<br>
             xcopy * <?php echo $caminho; ?>Compilados\atu\images /D:<?php echo $d; ?><br>
-            cd ..<br>
-            cd js<br>
-            xcopy * <?php echo $caminho; ?>Compilados\atu\js /D:<?php echo $d; ?><br>
-            cd ..<br>
-            cd bootstrap<br>
-            xcopy * <?php echo $caminho; ?>Compilados\atu\bootstrap /D:<?php echo $d; ?><br>
-            cd ..<br>
-            cd jquery<br>
-            xcopy * <?php echo $caminho; ?>Compilados\atu\jquery /D:<?php echo $d; ?><br><br>
+            cd ../js<br>
+            xcopy * /s /e <?php echo $caminho; ?>Compilados\atu\js /D:<?php echo $d; ?><br>
+            cd ../bootstrap<br>
+            xcopy * /s /e <?php echo $caminho; ?>Compilados\atu\bootstrap /D:<?php echo $d; ?><br>
+            cd ../jquery<br>
+            xcopy * /s /e <?php echo $caminho; ?>Compilados\atu\jquery /D:<?php echo $d; ?><br>
+            <div style="color:red">
+               del <?php echo $caminho; ?>Compilados\atu\styles\coresHomologacao.css<br><br>
+            </div>
          </div>
 
          <div style="font-size:10pt; font-weight: bold; margin:10px">
