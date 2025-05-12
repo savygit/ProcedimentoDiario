@@ -24,7 +24,7 @@ if (isset($_REQUEST["Consultar"]))
 		MessImgSVoltar("Data é obrigatória", MESSERRO);
 	}
 	else	
-	 	GeraArqQuitSigbol($_REQUEST["bd"], $_REQUEST["lay"], $_REQUEST["data"]);
+	 	GeraArqQuit($_REQUEST["bd"], $_REQUEST["lay"], $_REQUEST["data"], $_REQUEST["nomearq"]);
 }
 else
 {
@@ -33,20 +33,42 @@ else
 	echo ("Banco: <input type=text name=bd value='' size=15 placeholder='dbname'>\n<br><br>");
 	echo ("Layout: <input type=text name=lay value='' size=15 placeholder='código do layout'>\n<br><br>");
 	echo ("Data processamento: <input type=text name=data value='' size=15 placeholder='YYYY-MM-DD'>\n<br><br>");
+   echo ("Parte do nome do arquivo: <input type=text name=nomearq value='' size=20 placeholder=''>\n<br><br>");
 	echo ("<br><br><input type=submit name=Consultar value='Consultar'>");
 	echo ("</form>");
 }
 
-function GeraArqQuitSigbol($bd, $lay, $data)
+function GeraArqQuit($bd, $lay, $data, $nomearq)
 {
    $arq = new ConjReg($bd);
    if ($lay == "")
       $lay = 10;
    if ($data == "")
-      $data = BToM(DataAtual());
+      $data = DataAtualM();
    
+   $filtro = "";
+   if ($nomearq != "")
+      $filtro = " and NomeTXT like '%$nomearq%'";
+
+   $arq->ConsSele("ar.NomeTXT, ar.LayOutEDI, ar.ID", "ArqEDI as ar", 
+   	"ar.LayOutEDI = '$lay' and Date(ar.Tempo) = '$data' {$filtro}");
+   $arq->ExeCons();
+   if ($arq->TotReg() > 1)
+   {
+      echo "<h3>Há mais de um arquivo importado nesse dia</h3>";
+      while ($arq->LeProxReg())
+      {
+         echo $arq->Campo("NomeTXT") . "<br>";
+      }
+
+      return true;
+   }
+
+   $arq->LeProxReg();
+   $idArq = $arq->Campo("ID");
+
    $arq->ConsSele("ar.NomeTXT, ar.LayOutEDI, lin.Linha", "ArqEDI as ar, IntEDI as lin", 
-   	"lin.IDArquivo = ar.ID and ar.LayOutEDI = '$lay' and Date(ar.Tempo) = '$data'", "", "lin.NumLinha asc");
+   	"lin.IDArquivo = ar.ID and ar.ID = $idArq", "", "lin.NumLinha asc");
    $arq->ExeCons(true);
 //   $arq->ImpCons();
 //   die();
