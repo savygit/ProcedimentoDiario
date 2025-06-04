@@ -278,55 +278,55 @@
                <li><span class='comandolinux'>cp atu/* -Rap CAMINHO DOS FONTES</span>: <span class='comentario'>copia todo o conteúdo do diretorio "atu" para o diretório do sistema selecionado</span></li>
                <li><span class='comandolinux'>rm CAMINHO DOS FONTES/MsgArqUsu/*.txt</span>: <span class='comentario'>apaga todo o conteúdo do diretório MsgArqUsu</span></li>
                <li><span class='comandolinux'>chmod -R 0777 CAMINHO DOS FONTES</span>: <span class='comentario'>da permissão de leitura e escrita no diretório do sistema selecionado</span></li>
+            </ol>
          </li>
-      </ol>
-      <h5>Gerar Dados e Check Estrutura:</h5>
-      <li>Depois de executar os comandos acima, deve acessar o sistema que está sendo atualizado e Gerar Dados. Funcionalidade 726.</li>
-      <li>Após Gerar Dados, deve-se Checar a Estrutura[370] com todas as opções Sim/Não = SIM
-         <ol>
-            <li>A opções são: Tabela, View, Índice e Trigger</li>
-            <li>Para o Índice deve-se escolher a opção "Executar cadastros do Trix"</li>
-         </ol>
-      </li>
-      <h5>Mensagem de atualização para os usuários:</h5>
-      <li>Após a atualização da versão, é interessante criar uma mensagem para os usuários informando que o sistema foi atualizado</li>
-      <li>Acessar a funcionalidade 1212 e criar uma mensagem informando que o Trix foi atualizado</li>
-      <li>A validade da mensagem sugerida é de 1 dia</li>
-      <li>Texto Sugerido:</li>
-      <textarea cols=100 rows="5" class='texto_atu'><div style=\"font-size:18pt;padding:20px;line-height:40px; background-color:#F5DA81;border-radius:5px\"><h2 style=\"font-size:24pt\">COMUNICADO - ATUALIZAÇÃO DO SISTEMA!</h2>O sistema Trix foi atualizado hoje!<br>Qualquer dúvida, entre em contato com o suporte Trix<br><br>Bom Trabalho!</div></textarea>
-      <li>SQL para insert com validade para a data atual (esse SQL pode ser execultado pelo atualização):</li>
-      <textarea cols=100 rows="6" class='texto_atu'>INSERT INTO MesEmp (ID, DaData, AteData, Mensagem, EhMsgSistema, Ativo, Titulo, AbreTelaInic, LargMsg, AltMsg) VALUES ('', curdate(), curdate(), '<div style=\"font-size:18pt;padding:20px;line-height:40px; background-color:#F5DA81;border-radius:5px\"><h2 style=\"font-size:24pt\">COMUNICADO - ATUALIZAÇÃO DO SISTEMA!</h2>O sistema Trix foi atualizado hoje!<br>Qualquer dúvida, entre em contato com o suporte Trix<br><br>Bom Trabalho!</div>', 'S', 'S', '', 'S', '95%', '300px')</textarea>
-      <h5>Remover o arquivo em_atualizacao.php do sistema:</h5>
-      <li>Acesse a AtualizacaoTRIX e remova o arquivo em_atualizacao.php.
+         <h5>Gerar Dados e Check Estrutura:</h5>
+         <li>Depois de executar os comandos acima, deve acessar o sistema que está sendo atualizado e Gerar Dados. Funcionalidade 726.</li>
+         <li>Após Gerar Dados, deve-se Checar a Estrutura[370] com todas as opções Sim/Não = SIM
+            <ol>
+               <li>A opções são: Tabela, View, Índice e Trigger</li>
+               <li>Para o Índice deve-se escolher a opção "Executar cadastros do Trix"</li>
+            </ol>
+         </li>
+         <h5>Mensagem de atualização para os usuários:</h5>
+         <li>Após a atualização da versão, é interessante criar uma mensagem para os usuários informando que o sistema foi atualizado</li>
+         <li>Acessar a funcionalidade 1212 e criar uma mensagem informando que o Trix foi atualizado</li>
+         <li>A validade da mensagem sugerida é de 1 dia</li>
+         <li>Texto Sugerido:</li>
+         <textarea cols=100 rows="5" class='texto_atu'><div style="font-size:18pt;padding:20px;line-height:40px;background-color:#F5DA81;border-radius:5px"><h2 style="font-size:24pt;">COMUNICADO - ATUALIZAÇÃO DO SISTEMA!</h2>O sistema foi atualizado hoje!<br>Qualquer dúvida, entre em contato com o suporte<br><br>Bom Trabalho!</div></textarea>
+         <li>SQL para insert com validade para a data atual (esse SQL pode ser execultado pelo atualização):</li>
+         <textarea cols=100 rows="6" class='texto_atu'>INSERT INTO MesEmp (ID, DaData, AteData, Mensagem, EhMsgSistema, Ativo, Titulo, AbreTelaInic, LargMsg, AltMsg) VALUES ('', curdate(), curdate(), '<div style="font-size:18pt;padding:20px;line-height:40px; background-color:#F5DA81;border-radius:5px"><h2 style="font-size:24pt">COMUNICADO - ATUALIZAÇÃO DO SISTEMA!</h2>O sistema foi atualizado hoje!<br>Qualquer dúvida, entre em contato com o suporte<br><br>Bom Trabalho!</div>', 'S', 'S', '', 'S', '95%', '300px')</textarea>
+         <h5>Remover o arquivo em_atualizacao.php do sistema:</h5>
+         <li>Acesse a AtualizacaoTRIX e remova o arquivo em_atualizacao.php.
+            <ul>
+               <li>Atualize esse arquivo na pasta do Trix do sistema que foi atualizado</li>
+               <li>Clique <a target=_blank href='../AtualizacaoTRIX/preparar.php?excluir_arq=S&file_exc=em_atualizacao.php'>AQUI</a> para acessar o remover arquivo em_atualizacao.php</li>
+            </ul>
+         </li>
+         <h5>Help Desk:</h5>
+         <li>Registrar a atualização da versão em Help Desk
+            <ul>
+               <li>Assunto: Atualização da versão Trix dd/mm/aaaa: <b>Atualização da versão Trix <?php echo date("d/m/Y") ?></b></li>
+               <li>Interação: Atualização da versão Trix com o objetivo de implantar melhorias estruturais do sistema<br>
+                  Essa atualização também implanta os Help Desks XXXXXXX
+               </li>
+            </ul>
+         </li>
+         <li>Franquias Sigbol: O Help Desk DEVE ser aberto no sistema de Controle de Franquias</li>
+         <h5>Apontamento de horas</h5>
+         <li>A classificação do apontamento é "Atualização Sistema"</li>
+         <li>Na grande maioria dos sistemas Trix a atualização de versão é apontada como Locação, exceto:</li>
          <ul>
-            <li>Atualize esse arquivo na pasta do Trix do sistema que foi atualizado</li>
-            <li>Clique <a target=_blank href='../AtualizacaoTRIX/preparar.php?excluir_arq=S&file_exc=em_atualizacao.php'>AQUI</a> para acessar o remover arquivo em_atualizacao.php</li>
+            <li>Sigbol Ensino: Deve ser Cobrado SIM pois eles não pagam locação</li>
+            <li>Sigbol Controle: 40% do tempo deve ser Cobrado SIM pois eles não pagam locação e o restante Cobrado = NÃO pois se refere às franquias</li>
+            <li>SAVY: Deve ser Cobrado NÃO pois não tem Locação.</li>
          </ul>
-      </li>
-      <h5>Help Desk:</h5>
-      <li>Registrar a atualização da versão em Help Desk
-         <ul>
-            <li>Assunto: Atualização da versão Trix dd/mm/aaaa: <b>Atualização da versão Trix <?php echo date("d/m/Y") ?></b></li>
-            <li>Interação: Atualização da versão Trix com o objetivo de implantar melhorias estruturais do sistema<br>
-               Essa atualização também implanta os Help Desks XXXXXXX
-            </li>
-         </ul>
-      </li>
-      <li>Franquias Sigbol: O Help Desk DEVE ser aberto no sistema de Controle de Franquias</li>
-      <h5>Apontamento de horas</h5>
-      <li>A classificação do apontamento é "Atualização Sistema"</li>
-      <li>Na grande maioria dos sistemas Trix a atualização de versão é apontada como Locação, exceto:</li>
-      <ul>
-         <li>Sigbol Ensino: Deve ser Cobrado SIM pois eles não pagam locação</li>
-         <li>Sigbol Controle: 40% do tempo deve ser Cobrado SIM pois eles não pagam locação e o restante Cobrado = NÃO pois se refere às franquias</li>
-         <li>SAVY: Deve ser Cobrado NÃO pois não tem Locação.</li>
-      </ul>
 
-      <h5>Remover arquivos do diretório "atualizar" do servidor</h5>
-      <li>ATENÇÃO: O comando abaixo é para servidores que utilizam o acesso via SSH e deve estar dentro da "atualizar"</li>
-      rm -R atu<br>
-      rm AtuSTrix.sql atualizar.zip<br>&nbsp;
-
+         <h5>Remover arquivos do diretório "atualizar" do servidor</h5>
+         <li>ATENÇÃO: O comando abaixo é para servidores que utilizam o acesso via SSH e deve estar dentro da "atualizar"
+            <br>rm -R atu<br>
+            rm AtuSTrix.sql atualizar.zip<br>
+         </li>
       </ol>
    </div>
 </body>
