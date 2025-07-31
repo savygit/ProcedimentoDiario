@@ -41,6 +41,8 @@ mkdir BACKUP\BK_%1\NFeSilvano
 mkdir BACKUP\BK_%1\NFeIntermares
 mkdir BACKUP\BK_%1\NFeAdrianaBatista
 mkdir BACKUP\BK_%1\NFeHenrimar
+mkdir BACKUP\BK_%1\NFeOticaReal
+mkdir BACKUP\BK_%1\NFeSilvioLuiz
 mkdir BACKUP\BK_%1\MBL
 mkdir BACKUP\BK_%1\Ruiz
 
@@ -79,6 +81,8 @@ move bdnfe0005.sql.tar.gz BACKUP\BK_%1\NFeEliene\bdnfe0005.sql.tar.gz
 move bdnfe0006.sql.tar.gz BACKUP\BK_%1\NFeIntermares\bdnfe0006.sql.tar.gz
 move bdnfe0007.sql.tar.gz BACKUP\BK_%1\NFeAdrianaBatista\bdnfe0007.sql.tar.gz
 move bdnfe0008.sql.tar.gz BACKUP\BK_%1\NFeHenrimar\bdnfe0008.sql.tar.gz
+move bdnfe0009.sql.tar.gz BACKUP\BK_%1\NFeOticaReal\bdnfe0009.sql.tar.gz
+move bdnfe0010.sql.tar.gz BACKUP\BK_%1\NFeSilvioLuiz\bdnfe0010.sql.tar.gz
 move bdmbltrix.sql.tar.gz BACKUP\BK_%1\MBL\bdmbltrix.sql.tar.gz
 move bdruiz.sql.tar.gz BACKUP\BK_%1\Ruiz\bdruiz.sql.tar.gz
 
