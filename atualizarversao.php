@@ -197,9 +197,6 @@
             xcopy * /s /e <?php echo $caminho; ?>Compilados\atu\bootstrap /D:<?php echo $d; ?><br>
             cd ../jquery<br>
             xcopy * /s /e <?php echo $caminho; ?>Compilados\atu\jquery /D:<?php echo $d; ?><br>
-            <div style="color:red">
-               del <?php echo $caminho; ?>Compilados\atu\styles\coresHomologacao.css<br><br>
-            </div>
          </div>
 
          <div style="font-size:10pt; font-weight: bold; margin:10px">
