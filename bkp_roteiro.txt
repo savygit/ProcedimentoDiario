@@ -28,6 +28,7 @@ bdnfe0007.sql.tar.gz**T**S
 bdnfe0008.sql.tar.gz**T**S
 bdnfe0009.sql.tar.gz**T**S
 bdnfe0010.sql.tar.gz**T**S
+bdnfe0011.sql.tar.gz**T**S
 bdbrajap.sql.tar.gz**T**N
 bdbralog.sql.tar.gz**T**N
 AppColetasJap.zip**T**N
