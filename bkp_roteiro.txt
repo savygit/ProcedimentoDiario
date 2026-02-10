@@ -12,9 +12,7 @@ bdespmais.sql.tar.gz**T**S
 bdaipagm.sql.tar.gz**T**S
 bdescmus.sql.tar.gz**T**S
 bdaudiom.sql.tar.gz**T**S
-bdproser.sql.tar.gz**T**S
 bdfixx.sql.tar.gz**T**S
-bdruiz.sql.tar.gz**T**S
 phpInfo_reflectsys.txt**T**N
 BKPLogsQ.zip**T**N
 ##SERVIDOR ftp.reflectsys1.com.br**T**
@@ -30,12 +28,13 @@ bdnfe0009.sql.tar.gz**T**S
 bdnfe0010.sql.tar.gz**T**S
 bdnfe0011.sql.tar.gz**T**S
 bdnfe0012.sql.tar.gz**T**S
+bdnfe0013.sql.tar.gz**T**S
+bdnfe0014.sql.tar.gz**T**S
 bdbrajap.sql.tar.gz**T**N
 bdbralog.sql.tar.gz**T**N
 AppColetasJap.zip**T**N
 phpInfo_reflectsys1.txt**T**N
 ##SERVIDOR ftp.reflectsys2.com.br**T**
-bdsigscs.sql.tar.gz**T**S
 bdsigcfr.sql.tar.gz**T**S
 bdsigbol.sql.tar.gz**T**S
 sigbol1.sql.tar.gz**T**S
