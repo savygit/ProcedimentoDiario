@@ -41,18 +41,20 @@ if (isset($_REQUEST["GerarCodigo"]))
 		$cmd .= "drop database if exists $bd;\n" . 
 			 "create database $bd;\n";
 			 $cmd .= "use $bd\n";
+      if (isset($_REQUEST["setlatin"]))
+		   $cmd .= "SET NAMES 'latin1' COLLATE 'latin1_general_ci';\n";
 		if (isset($_REQUEST["recriabd"]))
-		$cmd .= "source $bd.sql;\n";
+		   $cmd .= "source $bd.sql;\n";
 		if (isset($_REQUEST["tabextra"]))
-		$cmd .= "source tabextras.sql;\n";
+		   $cmd .= "source tabextras.sql;\n";
 		if (isset($_REQUEST["tabextra2"]))
-		$cmd .= "source tabextras2.sql;\n";
+		   $cmd .= "source tabextras2.sql;\n";
 		if (isset($_REQUEST["tabextra3"]))
-		$cmd .= "source tabextras3.sql;\n";
+		   $cmd .= "source tabextras3.sql;\n";
 		if (isset($_REQUEST["tabextra4"]))
-		$cmd .= "source tabextras4.sql;\n";
+		   $cmd .= "source tabextras4.sql;\n";
 		if (isset($_REQUEST["intedi"]))
-		$cmd .= "source IntEDI.sql;\n";
+		   $cmd .= "source IntEDI.sql;\n";
 		if (isset($_REQUEST["atustrix"]))
 		{			
 			$cmd .= "source C:\\xampp\htdocs\Trix\TrixProjeto\Desenvolvimento\AtuSTrix.sql\n";
@@ -106,6 +108,7 @@ echo ("<input type='checkbox' name='intedi' >Importar IntEDI.sql (SPModal)<br>")
 echo ("<input type='checkbox' name='atustrix' checked>Importar AtuSTrix.sql<br>");
 echo ("<input type='checkbox' name='atustrix2' >Importar AtuSTrix.sql 2.0<br>");
 echo ("<input type='checkbox' name='bloqjob' checked>Bloquear JOBS e E-mails agendados?<br>");
+echo ("<input type='checkbox' name='setlatin'>Set o charset \"latin1\" e collate \"latin1_general_ci\" do banco<br>");
 echo ("<br><input type=submit name=GerarCodigo value='Gerar Codigo'>");
 echo ("</form>");
 ?>
