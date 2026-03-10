@@ -36,13 +36,14 @@ if (isset($_REQUEST["GerarCodigo"]))
 			
 		$cmd .= "cd $caminho\n";
 		$bd = $_REQUEST["nomebd"];
-		$cmd .= "mysql -uroot\n";
+      $charset = "";
+      if (isset($_REQUEST["setlatin"]))
+		   $charset = " --default-character-set=latin1";
+		$cmd .= "mysql -uroot{$charset}\n";
 		if (isset($_REQUEST["recriabd"]))
 		$cmd .= "drop database if exists $bd;\n" . 
 			 "create database $bd;\n";
 			 $cmd .= "use $bd\n";
-      if (isset($_REQUEST["setlatin"]))
-		   $cmd .= "SET NAMES 'latin1' COLLATE 'latin1_general_ci';\n";
 		if (isset($_REQUEST["recriabd"]))
 		   $cmd .= "source $bd.sql;\n";
 		if (isset($_REQUEST["tabextra"]))
