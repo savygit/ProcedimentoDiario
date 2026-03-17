@@ -1,11 +1,31 @@
 <?php
+/**
+ * COMO UTILIZAR ESSE PROGRAMA:
+ * PODE SER UTILIZADO LOCALMENTE. DEVE ESTAR DENTRO DA PASTA DESENVOLVIMENTO 
+ * NO FORMULARIO, PREENCHER OS DADOS DE CONEXÃO COM O BANCO DE DADOS (OBTER DO SISTEMA SAVY)
+ * FAÇA PRIMEIRO COM O BANCO ORIGEM:
+ * O PROGRAM ENTÃO ELIMINARÁ O ARQUIVO file-compara E PERCORRERÁ AS TABELAS DA SISTAB
+ * DE 10 EM 10, ORDENADAS PELO ID NUMERICO
+ * PARA CADA TABELA:
+ * OBTEM O ULTIMO E O PRIMEIRO ID DA TABELA
+ * PARA CADA CAMPO NUMÉRICO (INT, FLOAT, DOUBLE...) FAZ UM SUM E CONCATENA NA STRING
+ * AO FINALIZAR, RENOMEIE O ARQUIVO file-compara PARA file-compara-ori
+ * REPITA A EXECUÇÃO DESSE PROGRAMA, AGORA COM OS DADOS DO BANCO DESTINO
+ * 
+ * ABRA O EXCEL, COPIE O CONTEÚDO file-compara-ori NUMA PLANILHA E O CONTEUDO DO file-compara EM OUTRA PLANILHA
+ * COM BASE NUMA COMPARAÇÃO SIMPLES (CELULA = CELULA), CHEGA-SE NA VALIDAÇÃO DOS DADOS MIGRADOS
+ * 
+ * AS TABELAS QUE PODEM APRESENTAR DIFERENÇAS SÃO AS TABELAS DE LOGS E PROCESSOS COMO JobExe, Emails, MaiEnv, ConSes, SisLog, SisEQu
+ * 
+ * exemplo: planilha modeloComparaBDMigrado que está nesse diretório
+ */
 include_once 'funcbase.php';
 
 if (!isset($_REQUEST["H"]))
 {
    CabHTMBas($pm);
    echo "<br><br>";
-   echo "<form action=validaMigracao.php method=post>";
+   echo "<form action=validaMigracao.php method=post target=_self>";
    echo "H<input type=text name=H value='' size=100><br>";
    echo "U<input type=text name=U value='' size=100><br>";
    echo "P<input type=password name=P value='' size=100><br>";
@@ -98,3 +118,5 @@ if (CountArray($aTab) > 0)
    echo ("<script>setTimeout(Sub,0);function Sub(){window.location.href=\"validaMigracao.php?" . 
       "H={$aCon["H"]}&U={$aCon["U"]}&P={$aCon["P"]}&B={$aCon["B"]}&id=$lastId\"}</script>");
 }
+else
+   echo "acabou as tabelas";
