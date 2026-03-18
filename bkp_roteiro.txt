@@ -1,8 +1,6 @@
 ##SERVIDOR ftp.sistematrix.com.br**T**
 bdfazspm.sql.tar.gz**T**S
 bdalexsp.sql.tar.gz**T**S
-bdffdtrix.sql.tar.gz**T**S
-bdspmtrix.sql.tar.gz**T**S
 phpInfo_sistematrix.txt**T**N
 ##SERVIDOR ftp.reflectsys.com.br**T**
 bdsavy.sql.tar.gz**T**S
@@ -16,6 +14,8 @@ bdfixx.sql.tar.gz**T**S
 phpInfo_reflectsys.txt**T**N
 BKPLogsQ.zip**T**N
 ##SERVIDOR ftp.reflectsys1.com.br**T**
+bdspmalt.sql.tar.gz**T**S
+bdffdalt.sql.tar.gz**T**S
 bdnfe0001.sql.tar.gz**T**S
 bdnfe0002.sql.tar.gz**T**S
 bdnfe0003.sql.tar.gz**T**S
