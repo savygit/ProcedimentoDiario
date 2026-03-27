@@ -1,6 +1,12 @@
 ##SERVIDOR ftp.sistematrix.com.br**T**
 bdfazspm.sql.tar.gz**T**S
 bdalexsp.sql.tar.gz**T**S
+bddoccar.sql.tar.gz**T**S
+bdrvausi.sql.tar.gz**T**S
+bdspmtrix.sql.tar.gz**T**S
+bdffdtrix.sql.tar.gz**T**S
+bdsigcfralt.sql.tar.gz**T**S
+bdsigbolalt.sql.tar.gz**T**S
 phpInfo_sistematrix.txt**T**N
 ##SERVIDOR ftp.reflectsys.com.br**T**
 bdsavy.sql.tar.gz**T**S
@@ -14,9 +20,6 @@ bdfixx.sql.tar.gz**T**S
 phpInfo_reflectsys.txt**T**N
 BKPLogsQ.zip**T**N
 ##SERVIDOR ftp.reflectsys1.com.br**T**
-bdspmalt.sql.tar.gz**T**S
-bdffdalt.sql.tar.gz**T**S
-bdnfe0001.sql.tar.gz**T**S
 bdnfe0002.sql.tar.gz**T**S
 bdnfe0003.sql.tar.gz**T**S
 bdnfe0004.sql.tar.gz**T**S
@@ -30,15 +33,15 @@ bdnfe0011.sql.tar.gz**T**S
 bdnfe0012.sql.tar.gz**T**S
 bdnfe0013.sql.tar.gz**T**S
 bdnfe0014.sql.tar.gz**T**S
+bdnfe0015.sql.tar.gz**T**S
 bdbrajap.sql.tar.gz**T**N
 bdbralog.sql.tar.gz**T**N
 AppColetasJap.zip**T**N
 phpInfo_reflectsys1.txt**T**N
 ##SERVIDOR ftp.reflectsys2.com.br**T**
-bdsigcfr.sql.tar.gz**T**S
-bdsigbol.sql.tar.gz**T**S
 sigbol1.sql.tar.gz**T**S
 bdmbltrix.sql.tar.gz**T**S
+bdtpsoul.sql.tar.gz**T**S
 phpInfo_reflectsys2.txt**T**N
 ##SERVIDOR Toride proprio**T**
 TorideBK.rar**T**S
