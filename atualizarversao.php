@@ -249,11 +249,11 @@
          <li><i>Remover o arquivo atualizar.zip do diretório Compilados</i></li>
 
          <h4>Atualizar o sistema Savy</h4>
-         <li>Acesse a AtualizacaoTRIX e gere o arquivo em_atualizacao.php.
+         <li>Acesse a AtualizacaoSys e gere o arquivo em_atualizacao.php.
             <ul>
                <li>Ao gerar esse arquivo e enviar para o sistema que será atualizado, ele mostra uma mensagem de que o sistema está em atualização. Não sendo necessário alterar a pasta do sistema para derrubar os usuários logados</li>
                <li>Atualize esse arquivo na pasta do Savy do sistema a ser atualizado</li>
-               <li>Clique <a target=_blank href='../AtualizacaoTRIX/gerararq_ematu.php'>AQUI</a> para acessar o link para gerar esse arquivo</li>
+               <li>Clique <a target=_blank href='../AtualizacaoSys/gerararq_ematu.php'>AQUI</a> para acessar o link para gerar esse arquivo</li>
             </ul>
          </li>
          <li>Abrir a planilha de checklist que está no Google Drive (SavyDocs) "CheckList Atualização Sistemas"
@@ -293,10 +293,10 @@
          <li>SQL para insert com validade para a data atual (esse SQL pode ser execultado pelo atualização):</li>
          <textarea cols=100 rows="6" class='texto_atu'>INSERT INTO MesEmp (ID, DaData, AteData, Mensagem, EhMsgSistema, Ativo, Titulo, AbreTelaInic, LargMsg, AltMsg) VALUES ('', curdate(), curdate(), '<div style="font-size:18pt;padding:20px;line-height:40px; background-color:#F5DA81;border-radius:5px"><h2 style="font-size:24pt">COMUNICADO - ATUALIZAÇÃO DO SISTEMA!</h2>O sistema foi atualizado hoje!<br>Qualquer dúvida, entre em contato com o suporte<br><br>Bom Trabalho!</div>', 'S', 'S', '', 'S', '95%', '300px')</textarea>
          <h5>Remover o arquivo em_atualizacao.php do sistema:</h5>
-         <li>Acesse a AtualizacaoTRIX e remova o arquivo em_atualizacao.php.
+         <li>Acesse a AtualizacaoSys e remova o arquivo em_atualizacao.php.
             <ul>
                <li>Atualize esse arquivo na pasta do Savy do sistema que foi atualizado</li>
-               <li>Clique <a target=_blank href='../AtualizacaoTRIX/preparar.php?excluir_arq=S&file_exc=em_atualizacao.php'>AQUI</a> para acessar o remover arquivo em_atualizacao.php</li>
+               <li>Clique <a target=_blank href='../AtualizacaoSys/preparar.php?excluir_arq=S&file_exc=em_atualizacao.php'>AQUI</a> para acessar o remover arquivo em_atualizacao.php</li>
             </ul>
          </li>
          <h5>Help Desk:</h5>

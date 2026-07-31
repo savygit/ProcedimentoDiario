@@ -32,7 +32,7 @@ $arrGuias = array();
       
       echo "<div class='tab-content flex-grow-1 flex-shrink-0 pd-10 d-grid' id='myTabContent'>";
       echo str_replace(array("#IDGUIA#", "#ATIVA#"), array("Atu", "show active"), $divAbreGuia);
-      echo "<iframe class='frammain' id='Atu' src='http://localhost/Trix/AtualizacaoTRIX/' width='100%' height='100%' style='border:none;'></iframe>\n";
+      echo "<iframe class='frammain' id='Atu' src='http://localhost/Trix/AtualizacaoSys/' width='100%' height='100%' style='border:none;'></iframe>\n";
       echo "</div>";
       echo str_replace(array("#IDGUIA#", "#ATIVA#"), array("Proc", ""), $divAbreGuia);
       echo "<iframe class='frammain' id='Proc' src='http://localhost/Trix/ProcedimentoDiario/' width='100%' height='100%' style='border:none;'></iframe>\n";

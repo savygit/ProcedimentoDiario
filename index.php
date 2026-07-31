@@ -23,11 +23,11 @@
               <li><b>DESCRIÇÃO:</b>  Ao colocar o nome do programa, vai buscar no TrixProjeto e gerar um txt com o novo conteúdo para o analista substituir. </li>
               
 
-             <li><a href="../AtualizacaoTRIX/mov_prog_comp.php" >Copiar fontes DES para Compilados</a></li>
+             <li><a href="../AtualizacaoSys/mov_prog_comp.php" >Copiar fontes DES para Compilados</a></li>
 
               <li><b>DESCRIÇÃO:</b>  Rotina para copiar os arquivos fontes para a pasta Compilados. Lista os programas de acordo com data e hora da última alteração. </li>
 
-             <li><a href="../AtualizacaoTRIX/">Atualizar fontes e SQL nos sistemas em Produção</a></li>
+             <li><a href="../AtualizacaoSys/">Atualizar fontes e SQL nos sistemas em Produção</a></li>
 
                <li><b>DESCRIÇÃO:</b> Rotina para atualizar os programas fontes e queries no sistema de produção. </li>
 

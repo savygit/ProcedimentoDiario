@@ -76,7 +76,7 @@ if (!isset($aSistemas[$ii]))
 {
    die("Acabou");
 }
-$json = "C:/xampp/htdocs/Trix/AtualizacaoTRIX/localdata.json";
+$json = "C:/xampp/htdocs/Trix/AtualizacaoSys/localdata.json";
 $dados = file_get_contents($json);
 
 $dados = json_decode($dados, true);
