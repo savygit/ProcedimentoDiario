@@ -45,11 +45,11 @@ $arrGuias = array();
       echo "</div>";
       echo str_replace(array("#IDGUIA#", "#ATIVA#"), array("Links", ""), $divAbreGuia);
        echo ("<div style='margin-top:10px'><a " .
-         "href='https://www.reflectsys.com.br/Sistema/TrixDes/trixdes.php'>Acesso Direto TrixDes Produção</a></div>");
+         "href='https://www.reflectsys.com.br/Sistema/SavyDes/savydes.php' target=_blank>Acesso Direto SavyDes Produção</a></div>");
        echo ("<div style='margin-top:10px'><a " .
-         "href='https://www.reflectsys.com.br/Sistema/TrixDes200/trixdes.php'>Acesso Direto TrixDes 2.00 Produção</a></div>");
+         "href='https://www.reflectsys.com.br/Sistema/SavyDes200/savydes.php' target=_blank>Acesso Direto SavyDes 2.00 Produção</a></div>");
        echo ("<div style='margin-top:10px'><a " .
-         "href='https://www.reflectsys.com.br/Savy/savy.php'>Acesso Direto Savy Produção</a></div>");
+         "href='https://www.reflectsys.com.br/Savy/savy.php' target=_blank>Acesso Direto Savy Produção</a></div>");
       echo "</div>";
       
       echo "</div>";

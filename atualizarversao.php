@@ -3,7 +3,7 @@
 
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>COMO ATUALIZAR A VERSÃO DO SISTEMA TRIX EM PRODUÇÃO</title>
+   <title>COMO ATUALIZAR A VERSÃO DO SISTEMA SAVY EM PRODUÇÃO</title>
    <script type='text/javascript' src='../TrixProjeto/Desenvolvimento/jquery/jquery.js'></script>
    <script>
       function datault() {
@@ -92,12 +92,12 @@
 </head>
 
 <body>
-   <h2>Procedimento de atualização de versão do sistema Trix em produção</h2>
+   <h2>Procedimento de atualização de versão do sistema Savy em produção</h2>
    <a href='http://localhost/Trix/ProcedimentoDiario/'>Home</a><br><br>
    <h3>Introdução</h3>
    <div class='container'>
       <ul>
-         <li>A atualização de versão do sistema Trix em produção consiste em deixar o Trix do Cliente na mesma versão que o Trix Desenvolvimento</li>
+         <li>A atualização de versão do sistema Savy em produção consiste em deixar o Sistema Savy do Cliente na mesma versão que o Sistema Savy Desenvolvimento</li>
          <li>Para isso é necessário fazer o upload dos fontes e do AtuSTrix.sql</li>
          <li>Para os fontes, a atualização principal consiste em levar todos os programas fontes .php e .js do "Desenvolvimento" modificados a partir da última<br> atualização; todo o conteúdo do diretório "styles" e as imagens mais recentes do diretório "images"</li>
          <li><i>Caso haja mais algum diretório adicional, esse também deve ser considerado</i></li>
@@ -144,7 +144,7 @@
 
    ?>
    <div class='container'>
-      <h2>Procedimento de atualização de versão do sistema Trix em produção</h2>
+      <h2>Procedimento de atualização de versão do sistema Savy em produção</h2>
       <h3>Para windows - Usado temporariamente para copiar os programas via MS-DOS</h3>
       <h4>O roteiro deve ser usado com base no Oficial ou Oficial2.0</h4>
       <h4>Diretório: <?php echo $pasta; ?></h4>
@@ -181,7 +181,6 @@
                del <?php echo $caminho; ?>Compilados\atu\defmail.php<br>
                del <?php echo $caminho; ?>Compilados\atu\TRIXcliente.php<br>
                del <?php echo $caminho; ?>Compilados\atu\conf_logincliente.php<br>
-               del <?php echo $caminho; ?>Compilados\atu\trixdes.php<br>
                del <?php echo $caminho; ?>Compilados\atu\t.php<br>
                del <?php echo $caminho; ?>Compilados\atu\defibd.php<br>
                del <?php echo $caminho; ?>Compilados\atu\def_sis_teste.php<br>
@@ -249,11 +248,11 @@
             <br>
          <li><i>Remover o arquivo atualizar.zip do diretório Compilados</i></li>
 
-         <h4>Atualizar o sistema Trix</h4>
+         <h4>Atualizar o sistema Savy</h4>
          <li>Acesse a AtualizacaoTRIX e gere o arquivo em_atualizacao.php.
             <ul>
                <li>Ao gerar esse arquivo e enviar para o sistema que será atualizado, ele mostra uma mensagem de que o sistema está em atualização. Não sendo necessário alterar a pasta do sistema para derrubar os usuários logados</li>
-               <li>Atualize esse arquivo na pasta do Trix do sistema a ser atualizado</li>
+               <li>Atualize esse arquivo na pasta do Savy do sistema a ser atualizado</li>
                <li>Clique <a target=_blank href='../AtualizacaoTRIX/gerararq_ematu.php'>AQUI</a> para acessar o link para gerar esse arquivo</li>
             </ul>
          </li>
@@ -265,9 +264,9 @@
          <li>Nessa planilha há um checklist dos passos que devem ser executados PRINCIPALMENTE quando for uma atualização de vários sistemas como no caso da Rede Sigbol ou Brascon</li>
          <li><span class='importante'>IMPORTANTE: Siga os passos abaixo marcando na planilha o que foi executado e o que está em andamento<span></li>
          <h5>Programas Fontes e AtuSTrix.sql (Exceto Toride):</h5>
-         <li>No sistema Trix Savy, acessar: Cadastro de Sistemas >> Cadastros >> Backup/Atualização Sistema</li>
+         <li>No sistema Savy próprio, acessar: Cadastro de Sistemas >> Cadastros >> Backup/Atualização Sistema</li>
          <li>Selecione o sistema que será atualizado, deixe o "Tipo" selecionado com "Atualização de versão"</li>
-         <li>Ao processar, o Trix gera uma sequencia de comandos:
+         <li>Ao processar, o Sistema Savy gera uma sequencia de comandos:
             <ol>
                <li><span class='comandolinux'>cd public_html</span>: <span class='comentario'>Já sugere o servidor Locaweb, mas pode não ser. Entende que você acabou de se logar no FTP via SSH</span></li>
                <li><span class='comandolinux'>cd atualizar</span>: <span class='comentario'>Acessa o diretório onde estão os arquivos para atualização</span></li>
@@ -282,12 +281,12 @@
          <li>Após Gerar Dados, deve-se Checar a Estrutura[370] com todas as opções Sim/Não = SIM
             <ol>
                <li>A opções são: Tabela, View, Índice e Trigger</li>
-               <li>Para o Índice deve-se escolher a opção "Executar cadastros do Trix"</li>
+               <li>Para o Índice deve-se escolher a opção "Executar cadastros do Sistema Savy"</li>
             </ol>
          </li>
          <h5>Mensagem de atualização para os usuários:</h5>
          <li>Após a atualização da versão, é interessante criar uma mensagem para os usuários informando que o sistema foi atualizado</li>
-         <li>Acessar a funcionalidade 1212 e criar uma mensagem informando que o Trix foi atualizado</li>
+         <li>Acessar a funcionalidade 1212 e criar uma mensagem informando que o Sistema Savy foi atualizado</li>
          <li>A validade da mensagem sugerida é de 1 dia</li>
          <li>Texto Sugerido:</li>
          <textarea cols=100 rows="5" class='texto_atu'><div style="font-size:18pt;padding:20px;line-height:40px;background-color:#F5DA81;border-radius:5px"><h2 style="font-size:24pt;">COMUNICADO - ATUALIZAÇÃO DO SISTEMA!</h2>O sistema foi atualizado hoje!<br>Qualquer dúvida, entre em contato com o suporte<br><br>Bom Trabalho!</div></textarea>
@@ -296,15 +295,15 @@
          <h5>Remover o arquivo em_atualizacao.php do sistema:</h5>
          <li>Acesse a AtualizacaoTRIX e remova o arquivo em_atualizacao.php.
             <ul>
-               <li>Atualize esse arquivo na pasta do Trix do sistema que foi atualizado</li>
+               <li>Atualize esse arquivo na pasta do Savy do sistema que foi atualizado</li>
                <li>Clique <a target=_blank href='../AtualizacaoTRIX/preparar.php?excluir_arq=S&file_exc=em_atualizacao.php'>AQUI</a> para acessar o remover arquivo em_atualizacao.php</li>
             </ul>
          </li>
          <h5>Help Desk:</h5>
          <li>Registrar a atualização da versão em Help Desk
             <ul>
-               <li>Assunto: Atualização da versão Trix dd/mm/aaaa: <b>Atualização da versão Trix <?php echo date("d/m/Y") ?></b></li>
-               <li>Interação: Atualização da versão Trix com o objetivo de implantar melhorias estruturais do sistema<br>
+               <li>Assunto: Atualização da versão Savy dd/mm/aaaa: <b>Atualização da versão Sistema Savy <?php echo date("d/m/Y") ?></b></li>
+               <li>Interação: Atualização da versão Sistema Savy com o objetivo de implantar melhorias estruturais do sistema<br>
                   Essa atualização também implanta os Help Desks XXXXXXX
                </li>
             </ul>
@@ -312,7 +311,7 @@
          <li>Franquias Sigbol: O Help Desk DEVE ser aberto no sistema de Controle de Franquias</li>
          <h5>Apontamento de horas</h5>
          <li>A classificação do apontamento é "Atualização Sistema"</li>
-         <li>Na grande maioria dos sistemas Trix a atualização de versão é apontada como Locação, exceto:</li>
+         <li>Na grande maioria dos sistemas Savy a atualização de versão é apontada como Locação, exceto:</li>
          <ul>
             <li>Sigbol Ensino: Deve ser Cobrado SIM pois eles não pagam locação</li>
             <li>Sigbol Controle: 40% do tempo deve ser Cobrado SIM pois eles não pagam locação e o restante Cobrado = NÃO pois se refere às franquias</li>
