@@ -10,8 +10,8 @@ bdsigbolalt.sql.tar.gz**T**S
 phpInfo_sistematrix.txt**T**N
 ##SERVIDOR ftp.reflectsys.com.br**T**
 bdsavy.sql.tar.gz**T**S
-bdtrixdes.sql.tar.gz**T**S
-bdtrixdes2.sql.tar.gz**T**S
+bdsavydes.sql.tar.gz**T**S
+bdsavydes2.sql.tar.gz**T**S
 bdespmais.sql.tar.gz**T**S
 bdaipagm.sql.tar.gz**T**S
 bdescmus.sql.tar.gz**T**S
