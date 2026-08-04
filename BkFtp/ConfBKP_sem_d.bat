@@ -20,8 +20,8 @@ mkdir BACKUP\BK_%1\Sigbol
 mkdir BACKUP\BK_%1\FS_Controle
 mkdir BACKUP\BK_%1\SiteSigbol
 mkdir BACKUP\BK_%1\Savy
-mkdir BACKUP\BK_%1\TrixDes
-mkdir BACKUP\BK_%1\TrixDes2
+mkdir BACKUP\BK_%1\SavyDes
+mkdir BACKUP\BK_%1\SavyDes2
 mkdir BACKUP\BK_%1\EspacoMais
 mkdir BACKUP\BK_%1\ClinicaAudio
 mkdir BACKUP\BK_%1\AIPA
@@ -70,8 +70,8 @@ move bdbrajap.sql.tar.gz BACKUP\BK_%1\BrasconJaparatuba\bdbrajap.sql.tar.gz
 move bdsigbolalt.sql.tar.gz BACKUP\BK_%1\Sigbol\bdsigbolalt.sql.tar.gz
 move bdsigcfralt.sql.tar.gz BACKUP\BK_%1\FS_Controle\bdsigcfralt.sql.tar.gz
 move sigbol1.sql.tar.gz BACKUP\BK_%1\SiteSigbol\sigbol1.sql.tar.gz 
-move bdtrixdes.sql.tar.gz BACKUP\BK_%1\TrixDes\bdtrixdes.sql.tar.gz
-move bdtrixdes2.sql.tar.gz BACKUP\BK_%1\TrixDes2\bdtrixdes2.sql.tar.gz
+move bdsavydes.sql.tar.gz BACKUP\BK_%1\SavyDes\bdsavydes.sql.tar.gz
+move bdsavydes2.sql.tar.gz BACKUP\BK_%1\SavyDes2\bdsavydes2.sql.tar.gz
 move bdfixx.sql.tar.gz BACKUP\BK_%1\Fixx\bdfixx.sql.tar.gz
 move TorideBK.rar BACKUP\BK_%1\Toride\TorideBK.rar
 move BKPLogsQ.zip BACKUP\BK_%1\LogsQ_Reflectsys\BKPLogsQ.zip
