@@ -50,6 +50,7 @@ mkdir BACKUP\BK_%1\MBL
 mkdir BACKUP\BK_%1\RVA
 mkdir BACKUP\BK_%1\DocesCariati
 mkdir BACKUP\BK_%1\SoulYana
+mkdir BACKUP\BK_%1\Ferraneli
 
 move phpInfo_reflectsys.txt BACKUP\BK_%1\PHPInfo\phpInfo_reflectsys.txt
 move phpInfo_reflectsys1.txt BACKUP\BK_%1\PHPInfo\phpInfo_reflectsys1.txt
@@ -94,6 +95,7 @@ move bdmbltrix.sql.tar.gz BACKUP\BK_%1\MBL\bdmbltrix.sql.tar.gz
 move bdrvausi.sql.tar.gz BACKUP\BK_%1\RVA\bdrvausi.sql.tar.gz
 move bddoccar.sql.tar.gz BACKUP\BK_%1\DocesCariati\bddoccar.sql.tar.gz
 move bdtpsoul.sql.tar.gz BACKUP\BK_%1\SoulYana\bdtpsoul.sql.tar.gz
+move bdferraneli.sql.tar.gz BACKUP\BK_%1\Ferraneli\bdferraneli.sql.tar.gz
 
 cd BACKUP
 
