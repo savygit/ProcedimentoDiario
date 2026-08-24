@@ -39,7 +39,6 @@ bdbralog.sql.tar.gz**T**N
 AppColetasJap.zip**T**N
 phpInfo_reflectsys1.txt**T**N
 ##SERVIDOR ftp.reflectsys2.com.br**T**
-sigbol1.sql.tar.gz**T**S
 bdmbltrix.sql.tar.gz**T**S
 bdtpsoul.sql.tar.gz**T**S
 bdferraneli.sql.tar.gz**T**S

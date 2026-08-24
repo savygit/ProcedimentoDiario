@@ -72,7 +72,7 @@ function lecampos_bkp()
    comando = comando_bkpTor + " "  + $('#ftpsis').val() + " 1";
    comando_bkp += "<br>&emsp;&emsp;" + comando + imgCopy(comando);
 
-   comando_confbkp = comando_confbkp + " " + data + " " + $('#rar').val() + " \"F:\\BKP_EMPRESAS E TRIX\" " + 
+   comando_confbkp = comando_confbkp + " " + data + " " + $('#rar').val() + " \"F:\\INUTILIZADO\" " + 
       $('#ftpsis').val() + complemento;
       
     comando_confbkp += imgCopy(comando_confbkp.replaceAll("\"", "\\\""));
