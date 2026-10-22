@@ -25,7 +25,7 @@ $c = "C:\\xampp\\htdocs\\Trix\\ProcedimentoDiario\\BkFtp\\";
 echo "<!DOCTYPE html>";
 echo "<html>";
 echo "<head>";
-echo "<title>Verificação de Backups dos Bancos de dados do Trix</title>";
+echo "<title>Verificação de Backups dos Bancos de dados dos Sistemas</title>";
 echo "<script>function ValidaJust() { wtxt=document.getElementById('idObsConfLog').value; if (wtxt== '') {alert('Preencher a justificativa'); return false;} else return true; }</script>";
 echo "<script type='text/javascript' src='http://localhost/Trix/TrixProjeto/Desenvolvimento/jquery/jquery.js'></script>";
 echo "<script type='text/javascript' src='http://localhost/Trix/TrixProjeto/Desenvolvimento/rotinas.js'></script>";
@@ -34,7 +34,7 @@ echo "<body>";
 
 $log = "";
 
-$h = "<b style='font-size: 16pt; color: DARKGREEN'>Verificação de Backups dos Bancos de dados do Trix</b><br>";
+$h = "<b style='font-size: 16pt; color: DARKGREEN'>Verificação de Backups dos Bancos de dados dos Sistemas</b><br>";
 $h .= "<b>Último refresh da tela: " . date('d/m/Y - H:i:s') . " - Diretório local de backup: $c</b>\n";
 $h .= "<table border=1 style='border: 1px solid black; border-collapse: collapse; font-family: arial; font-size: 9pt' cellpadding=3px cellspacing=3px>";
 $h .= "<tr style='background-color:NAVY; color: WHITE; border: white'><th>Data do<br>último log</th><th>Arquivo</th>";
