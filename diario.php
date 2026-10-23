@@ -36,9 +36,13 @@ li:before { content: counters(item, ".") " "; counter-increment: item }
 #feedback_bkp{
    color: red;
 }
-#comando_confbkp,
+#comando_confbkp, #comando_confbkp_alt,
 #comando_bkp{
    font-weight: bold;
+}
+
+#comando_confbkp_alt{
+   color: green;
 }
 </style>
 <script type='text/javascript' src='../TrixProjeto/Desenvolvimento/jquery/jquery.js'></script>
@@ -73,9 +77,13 @@ function lecampos_bkp()
    comando_bkp += "<br>&emsp;&emsp;" + comando + imgCopy(comando);
 
    comando_confbkp = comando_confbkp + " " + data + " " + $('#rar').val() + " \"F:\\INUTILIZADO\" " + 
-      $('#ftpsis').val() + complemento;
-      
-    comando_confbkp += imgCopy(comando_confbkp.replaceAll("\"", "\\\""));
+      $('#ftpsis').val() + complemento; 
+
+   comando_confbkp_alt = comando_confbkp + " sem_d ";
+
+   comando_confbkp += imgCopy(comando_confbkp.replaceAll("\"", "\\\""));
+   
+   comando_confbkp_alt += imgCopy(comando_confbkp_alt.replaceAll("\"", "\\\""));
       
    if($('#rar').val().trim() == "" || $('#ftpsis').val().trim() == "") {
       if($('#rar').val().trim() == "")
@@ -98,6 +106,7 @@ function lecampos_bkp()
       feedback_bkp = feedback_bkp + "<li>Pode executar o comando</li>";
       $("#comando_bkp").html(comando_bkp);
       $("#comando_confbkp").html(comando_confbkp);
+      $("#comando_confbkp_alt").html(comando_confbkp_alt);
       $('#feedback_bkp').css("color", "green");
    }
    $('#feedback_bkp').html(feedback_bkp);
@@ -169,7 +178,8 @@ echo "<li> Aguardar todos os downloads finalizarem e plugar o pendrive de bkp no
 echo "<li> Acessar o link: <a href='$link_conf' target='blank'>CONFERENCIA</a> e confirmar os valores encontrados</li>";
 
 echo "<li> Executar o comando no DOS já aberto em $caminho_bkp: "
-   . "<span id='comando_confbkp'>O Comando só aparece preencher as senhas</span></li>";
+   . "<span id='comando_confbkp'>O Comando só aparece preencher as senhas</span><br>". 
+   " ou <i>alternativo acessar: <span id='comando_confbkp_alt'>O Comando só aparece preencher as senhas</span></i></li>";
 
 echo "<li> Após executar as ações do comando acima, haverá uma pergunta no MS-DOS <br>" .
 	"<i>D:\BACKUP>rd BK_YYYYMMDD/s BK_YYYYMMDD, Tem certeza (S/N)?</i><br>Digite S + Enter</li>";
